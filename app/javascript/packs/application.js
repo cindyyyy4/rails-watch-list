@@ -15,3 +15,9 @@ import 'bootstrap';
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+import 'select2/dist/css/select2.min.css'
+import { initSelect2 } from './plugins/init_select2';
+
+document.addEventListener('turbolinks:load', () => {
+  initSelect2();
+});
